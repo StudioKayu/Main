@@ -4,7 +4,6 @@ function Login() {
   return (
     <>
       {/* logo luar sidebar */}
-      <img src={Logo} alt="Studio Kayu" className="login-logo" />
 
       <div className="login-page">
         <div className="login-card">

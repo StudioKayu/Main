@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/Login";
+import Promo from "./pages/Promo";
 import Logo from "./assets/logo-studiokayu.svg";
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
   return (
     <Router>
       <div className="app">
+        {/* LOGO GLOBAL */}
+        <img src={Logo} alt="Studio Kayu" className="app-logo" />
+
         <button
           className="sidebar-toggle"
           onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -40,7 +44,6 @@ function App() {
               <li>
                 <Link to="/ikea-family">IKEA Family</Link>
               </li>
-
               <li className="menu-auth-wrapper">
                 <Link to="/login" className="menu-auth">
                   Masuk / Daftar
@@ -52,6 +55,7 @@ function App() {
 
         <main className={`content ${sidebarOpen ? "blurred" : ""}`}>
           <Routes>
+            <Route path="/" element={<Promo />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </main>
