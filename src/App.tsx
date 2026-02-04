@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/Login";
 import Promo from "./pages/Promo";
-import Logo from "./assets/logo-studiokayu.svg";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);

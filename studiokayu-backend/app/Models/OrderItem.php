@@ -9,6 +9,6 @@ class OrderItem extends Model
     protected $fillable = [
         'ordeItem_id',
         'quantity',
-        'subtotal;'
+        'subtotal'
     ];
 }

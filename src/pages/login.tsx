@@ -1,5 +1,3 @@
-import Logo from "../assets/logo-studiokayu.svg";
-
 function Login() {
   return (
     <>
