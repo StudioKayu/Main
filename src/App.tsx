@@ -30,7 +30,7 @@ function App() {
           <div className="sidebar-menu">
             <ul>
               <li>
-                <Link to="/">Promo</Link>
+                <Link to="/promo">Promo</Link>
               </li>
               <li>
                 <Link to="/produk-terlaris">Produk Terlaris</Link>
@@ -55,7 +55,7 @@ function App() {
 
         <main className={`content ${sidebarOpen ? "blurred" : ""}`}>
           <Routes>
-            <Route path="/" element={<Promo />} />
+            <Route path="/promo" element={<Promo />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </main>
