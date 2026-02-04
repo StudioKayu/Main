@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Category;
+namespace App\Http\Controllers\API\Category;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
@@ -26,6 +26,10 @@ class CategoryController extends Controller
                 'status' => 'data Tidak Ditemukan ',404
             ]);
         }
+        return response()->json([
+            'status' => 'Success',
+            'data' => $category
+        ]);
     }
     public function store(Request $request)
 {

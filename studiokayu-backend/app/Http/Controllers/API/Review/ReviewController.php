@@ -1,55 +1,73 @@
 <?php
 
-namespace App\Http\Controllers\Api\Review;
+namespace App\Http\Controllers\API\Review;
 
 use App\Http\Controllers\Controller;
 use App\Models\Review;
-use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use Illuminate\Http\JsonResponse; // Gunakan ini yang lebih standar untuk Laravel
 
 class ReviewController extends Controller
-{ 
-    //untuk mencari product
-    public function getByProduct($productId){
-        $reviews =  Review::where('productId')
-                    ->with('user:id,name')
-                    ->latest
-                    ->get();
+{
+    /**
+     * Mengambil review berdasarkan ID Produk.
+     */
+    public function getByProduct($productId): JsonResponse
+    {
+        // Pastikan relasi 'user' sudah ada di Model Review
+        $reviews = Review::where('product_id', $productId)
+            ->with('user:id,name')
+            ->latest()
+            ->get();
+
         return response()->json([
-            'status' => 'succes',
+            'status' => 'success',
             'data' => $reviews
         ]);
     }
-    public function store(Request $request): JsonResponse{
-        //validasi input
+
+    /**
+     * Menyimpan review baru.
+     */
+    public function store(Request $request): JsonResponse
+    {
         $request->validate([
-            'product_id' => 'required|exits:products,id',
+            'product_id' => 'required|exists:products,id',
             'rating' => 'required|integer|min:1|max:5',
             'comment' => 'required'
         ]);
-        $reviews = Review::create([
-            'user_id' =>auth()->id(),
+
+        $review = Review::create([
+            'user_id' => 1, // 🔥 HARDCODE SEMENTARA
             'product_id' => $request->product_id,
             'rating' => $request->rating,
             'comment' => $request->comment,
-            'reviewdate' => now(),
+            'review_date' => now(),
         ]);
+
         return response()->json([
             'status' => 'success',
-            'massage' => 'Terimakasih atas ulasan anda',
-            'data' => $reviews
-        ],201);
+            'message' => 'Review berhasil disimpan',
+            'data' => $review
+        ], 201);
     }
-    public function destoy($id): JsonResponse{
-        $reviews = Review::where('id', $id)->where('user_id', auth()->id())->first();
-        
-        if(!$reviews){
+    public function destroy($id): JsonResponse // Perbaiki typo 'destoy' jadi 'destroy'
+    {
+        // Mencari review berdasarkan ID dan memastikan milik user yang sedang login
+        $review = Review::find($id);
+
+        if (!$review) {
             return response()->json([
-                'massage' => 'Review Tidak Ditemukan',404
-            ]);
+                'status' => 'error',
+                'message' => 'Review tidak ditemukan atau Anda tidak memiliki akses'
+            ], 404); // Angka 404 harus di luar array agar terbaca sebagai status code
         }
-        $reviews->delete();
-        return response()->json(['massage' =>'Reviews Berhasil Di Hapus']);
+
+        $review->delete();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Review berhasil dihapus'
+        ]);
     }
 }

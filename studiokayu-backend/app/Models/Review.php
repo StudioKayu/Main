@@ -3,13 +3,21 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use App\Models\User;
 
 class Review extends Model
 {
     protected $fillable = [
-        'review_id',
+        'user_id',
+        'product_id',
         'rating',
         'comment',
-        'reviewdate'
+        'review_date',
     ];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
