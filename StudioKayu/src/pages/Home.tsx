@@ -116,21 +116,21 @@ const Home = () => {
                 <div className='mt-5 w-full max-w-[1200px] px-4 flex ml-20'>
                     <div className='grid grid-cols-3 gap-15 flex'>
                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
                             <p className='text-lg font-bold text-red-500'>1.500.000</p>
                         </div>
                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
                             <p className='text-lg font-bold text-red-500'>1.500.000</p>
                         </div>
-                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                        <div className='w-full max-w-[590px]'>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
@@ -138,27 +138,27 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                  <div className="w-full max-w-[1200px] mx-auto px-4 mt-10">
+                <div className="w-full max-w-[1200px] mx-auto px-4 mt-10">
                     <div className="h-[1px] bg-black w-full"></div>
                 </div>
                 <div className='mt-5 w-full max-w-[1200px] px-4 flex ml-20'>
                     <div className='grid grid-cols-3 gap-15 flex'>
                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
                             <p className='text-lg font-bold text-red-500'>1.500.000</p>
                         </div>
                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
                             <p className='text-lg font-bold text-red-500'>1.500.000</p>
                         </div>
-                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                        <div className='w-full max-w-[590px]'>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
@@ -166,20 +166,20 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                 <div className="w-full max-w-[1200px] mx-auto px-4 mt-10">
+                <div className="w-full max-w-[1200px] mx-auto px-4 mt-10">
                     <div className="h-[1px] bg-black w-full"></div>
                 </div>
-                 <div className='mt-5 w-full max-w-[1200px] px-4 flex ml-20'>
+                <div className='mt-5 w-full max-w-[1200px] px-4 flex ml-20'>
                     <div className='grid grid-cols-3 gap-15 flex'>
                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
                             <p className='text-lg font-bold text-red-500'>1.500.000</p>
                         </div>
                         <div className='w-full max-w-[590px]'>
-                            <img src="/photo/Lemari_kecil.png" alt=""  className='mt-20'/>
+                            <img src="/photo/Lemari_kecil.png" alt="" className='mt-20' />
                             <p className=' cursor-pointer hover:underline transition-all text-2xl mt-5'>Urban Home</p>
                             <p className='text-m'>Rak Sepatu, Minimalis 100x80 cm</p>
                             <p className='text-sm line-through text-slate-400'>2.000.000</p>
@@ -187,7 +187,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                 <Footer />
+                <Footer />
             </section>
         </>
     );
@@ -195,8 +195,33 @@ const Home = () => {
 const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-6 mt-10 w-full">
-            <p className="text-center">© 2026 Brand Name. All rights reserved.</p>
+            <div className='flex items-stretch ml-25'>
+                <img src="/photo/hp.png" alt="" className="w-[125px] ml-15 items-left justify-left flex" />
+                <div className='flex flex-col  ml-20 mt-5 '>
+                    <p className='text-white font-bold text-lg'>Aplikasi Studio Mebel</p>
+                    <p className='max-w-[290px] mt-3'>StudioMebel memudahkan Anda menemukan mebel berkualitas untuk rumah dan kantor, lengkap dengan inspirasi desain dan penawaran menarik</p>
+                    <div className='bg-white border-2 border-black rounded-xl w-[170px] h-[30px] mt-5 mb-5'>
+                        <p className='text-black text-center  flex  justify-center items-center text-[12px] font-semibold mt-1'>Download di Android </p>
+                    </div>
+                    <div className='bg-white border-2 border-black rounded-xl w-[170px] h-[30px] mt-[-10px] mb-5'>
+                        <p className='text-black text-center  flex  justify-center items-center text-[12px] font-semibold mt-1'>Download di Ios</p>
+                    </div>
+                </div>
+                <div className='ml-35 mt-5 max-w-[400px]'>
+                    {/* 1. Judul: Menggunakan col-span-2 agar tetap di atas sendirian */}
+                    <p className='text-white font-bold text-lg mb-5'>Tautan Yang Berguna</p>
+
+                    {/* 2. Container Grid untuk isi link */}
+                    <div className='grid grid-cols-2 gap-x-12 gap-y-3'>
+                        <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Karier</p>
+                        <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Berita</p>
+                        <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Saran</p>
+                        <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Bantuan</p>
+                    </div>
+                </div>
+            </div>
+
         </footer>
     );
-}; 
+};
 export default Home;
