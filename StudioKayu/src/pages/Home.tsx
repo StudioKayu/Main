@@ -15,11 +15,11 @@ const Header = () => {
 
             {/* 2. SISI TENGAH (Menu) */}
             <div className="flex gap-8 justify-center items-center font-semibold text-sm uppercase tracking-wide">
-                <Link to="/" className="flex items-center gap-2 hover:text-amber-600 transition">
+                <Link to="/promo" className="flex items-center gap-2 hover:text-amber-600 transition">
                     <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></div>
                     Promo
                 </Link>
-                <Link to="/product" className="hover:text-amber-600 transition">
+                <Link to="/Product_Terlaris" className="hover:text-amber-600 transition">
                     Product Terlaris
                 </Link>
                 <Link to="/product" className="hover:text-amber-600 transition">
@@ -187,6 +187,13 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div className="w-full max-w-[800px] mt-10 ml-[-400px]">
+                    <div className="h-[1px] bg-black w-full"></div>
+                </div>
+                <div className='mt-10 mb-5 w-full max-w-[1000px] px-4 flex ml-[-120px]'>
+                    <p>Sempurnakan momen akhir tahun dengan berbagai pilihan mebel dan aksesori berkualitas dari StudioMebel. Nikmati Year End Sale 2025 dengan potongan harga hingga 70% untuk ratusan produk pilihan yang siap mempercantik rumah dan kantor Anda.</p>
+                </div>
+
                 <Footer />
             </section>
         </>
@@ -218,6 +225,49 @@ const Footer = () => {
                         <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Saran</p>
                         <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Bantuan</p>
                     </div>
+
+                    <div className=' flex gap-2'>
+                        <div className='bg-white rounded-[50%] w-[40px] h-[40px] mt-10 flex justify-center items-center p-3 cursor-pointer hover:opacity-90 transition'>
+                            <img
+                                src="/photo/whatsapp.png"
+                                alt="WhatsApp"
+                                className="w-6 h-6 sm:w-32 md:w-40 object-contain"
+                            />
+
+                        </div>
+                        <div className='bg-white rounded-[50%] w-[40px] h-[40px] mt-10 flex justify-center items-center p-3 cursor-pointer hover:opacity-90 transition'>
+                            <img
+                                src="/photo/whatsapp.png"
+                                alt="WhatsApp"
+                                className="w-28 sm:w-32 md:w-40 h-auto object-contain"
+                            />
+
+                        </div>
+                        <div className='bg-white rounded-[50%] w-[40px] h-[40px] mt-10 flex justify-center items-center p-3 cursor-pointer hover:opacity-90 transition'>
+                            <img
+                                src="/photo/whatsapp.png"
+                                alt="WhatsApp"
+                                className="w-28 sm:w-32 md:w-40 h-auto object-contain"
+                            />
+
+                        </div>
+
+                        <div className='bg-white rounded-[50%] w-[40px] h-[40px] mt-10 flex justify-center items-center p-3 cursor-pointer hover:opacity-90 transition'>
+                            <img
+                                src="/photo/whatsapp.png"
+                                alt="WhatsApp"
+                                className="w-28 sm:w-32 md:w-40 h-auto object-contain"
+                            />
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div className='ml-45 mt-5 max-w-400'>
+                    <p className='text-white font-bold text-lg mb-5'>Lokasi Kami</p>
+                    <p className='text-gray-300 hover:text-white cursor-pointer transition-colors'>Araya, Malang</p>
                 </div>
             </div>
 
