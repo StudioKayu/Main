@@ -55,6 +55,7 @@ const Profile = () => {
     <div className=' flex flex-row justify-beetween gap-20 mt-10'>
         <p className='font-semibold text-2xl'>My Profile</p>
         <p>Stephen Wijaya Utama</p>
+        <p>halo</p>
 
     </div>
 
