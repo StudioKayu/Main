@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Di Tailwind v4, kita daftar warna custom di sini */
+@theme {
+  --color-navy-dark: #020617;
+  --color-navy-soft: #0f172a;
+}
+
+/* Tambahan agar tidak ada margin aneh di body */
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    display: block; /* Hapus flex bawaan Vite agar layout tidak hancur */
+  }
+}
