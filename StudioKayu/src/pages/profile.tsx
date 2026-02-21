@@ -52,13 +52,38 @@ const Profile = () => {
     <p className="mt-4 font-semibold text-center">
       Stephen Wijaya Utama
     </p>
-    <div className=' flex flex-row justify-beetween gap-20 mt-10'>
-        <p className='font-semibold text-2xl'>My Profile</p>
-        <p>Stephen Wijaya Utama</p>
-        <p>halo</p>
+    <div className="flex flex-col mt-10 w-full">
+<details className="group ml-10 w-[400px] bg-white rounded-2xl shadow-md p-6 transition-all duration-300">
 
+  <summary className="cursor-pointer font-semibold flex justify-between items-center text-2xl list-none">
+    <span>My Profile</span>
+    <span className="transition-transform duration-300 group-open:rotate-180 text-gray-500">
+      ▼
+    </span>
+  </summary>
+
+  <div className="mt-6 space-y-4 text-gray-700">
+
+    <div className="flex justify-between border-b pb-2">
+      <p className="font-medium text-gray-500">Name</p>
+      <p className="font-semibold">Stephen Wijaya Utama</p>
     </div>
 
+    <div className="flex justify-between border-b pb-2">
+      <p className="font-medium text-gray-500">Status</p>
+      <p className="text-green-600 font-medium">Active Member</p>
+    </div>
+
+    <div className="flex justify-between">
+      <p className="font-medium text-gray-500">Greeting</p>
+      <p className="font-medium">Halo 👋</p>
+    </div>
+
+  </div>
+
+</details>
+
+</div>
   </div>
 </section>
     );
