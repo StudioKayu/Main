@@ -7,7 +7,7 @@ import Product_Terlaris from "./pages/Product_Terlaris";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PromoAp from "./pages/PromoAp";
-import Profile from "./pages/profile";
+import Profile from "./pages/Profile";
 function App() {
   return (
     <Router>
