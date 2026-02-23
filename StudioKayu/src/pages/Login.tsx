@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "@lottiefiles/dotlottie-wc";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 import SKlogo from "../assets/Logo.svg";
 
 export default function Login() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // logic login di sini
+    console.log({ email, password });
+  };
 
   return (
     <>
@@ -240,7 +248,7 @@ export default function Login() {
       {/* HEADER */}
       <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b px-8 py-4 flex items-center text-slate-800">
         <div className="flex-1">
-          <Link to="/" className="font-bold text-xl tracking-tight ml-15">
+          <Link to="/" className="font-bold text-xl tracking-tight ml-16">
             Studio<span className="text-amber-600">Kayu</span>
           </Link>
         </div>
@@ -310,22 +318,34 @@ export default function Login() {
       <div className="login-page">
         <div className="login-card">
           <div className="illustration">
-            <dotlottie-wc
-              src="https://lottie.host/34a2b228-4257-48f9-98ca-0636d39ea7df/o8Qpp7CQPh.lottie"
-              style={{ width: "300px", height: "300px" }}
-              autoplay
-              loop
-            />
+            <div className="illustration">
+              <DotLottieReact
+                src="https://lottie.host/34a2b228-4257-48f9-98ca-0636d39ea7df/o8Qpp7CQPh.lottie"
+                loop
+                autoplay
+                style={{ width: 300, height: 300 }}
+              />
+            </div>
           </div>
 
-          <form className="login-form">
+          <form className="login-form" onSubmit={handleSubmit}>
             <label>
               Login <span className="required">*</span>
             </label>
-            <input type="text" placeholder="Email atau Username" />
+            <input
+              type="text"
+              placeholder="Email atau Username"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
             <label>Password</label>
-            <input type="password" placeholder="••••••••" />
+            <input
+              type="password"
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
             <button type="submit">Masuk</button>
 
