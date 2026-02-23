@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PromoAp from "./pages/PromoAp";
 import Profile from "./pages/Profile";
+import Partner from "./pages/Partner";
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/PromoAp" element={<PromoAp />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/Partner" element={<Partner/>} />
       </Routes>
     </Router>
   );

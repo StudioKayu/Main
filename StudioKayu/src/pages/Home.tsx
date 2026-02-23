@@ -74,7 +74,7 @@ const Home = () => {
                         />
                     </div>
                     <div className='flex items-center gap-7'>
-                        <a href=""><img src="/photo/user.png" alt="" className="w-[28px] h-auto object-contain mb-1" /></a>
+                        <a href="/profile"><img src="/photo/user.png" alt="" className="w-[28px] h-auto object-contain mb-1" /></a>
                         <img src="/photo/keranjang.png" alt="" className="w-[25px] h-auto object-contain mb-1" />
                         <img src="/photo/daftar_belanja.png" alt="" className="w-[25px] h-auto object-contain mb-1" />
                     </div>
